@@ -1,12 +1,15 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 body{
     margin: 0;
     padding: 0;
-    background-image: url('/src/assets/BackgroundImage.svg');
+    background-image: url('./assets/Background.svg');
+    background-color: none;
     background-size: cover;
     background-repeat: no-repeat;
-    /* font-family: "Poppins", sans-serif; */
+    font-family: "Poppins", sans-serif;
 }
+
 .container {
     position: relative;
     display: flex;
@@ -16,6 +19,7 @@ body{
     height: 100vh;
     text-align: center;
 }    
+
 .logo {
     position: absolute;
     top: 20px;
@@ -34,7 +38,7 @@ p {
 }
 .waitlist-btn {
     outline: none;
-    padding: 10px 50px;
+    padding: 5px 45px;
     font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
@@ -51,4 +55,30 @@ p {
     position: fixed;
     font-size: 14px;
     bottom: 0;
+}
+
+
+/* input section css */
+
+
+.input-container{
+display: flex;
+flex-direction: colomn;
+justify-content: center;
+align-items: center;
+gap: 20px;
+padding: 1.8em 5em;
+margin: 2em;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border: 0.em solid #000;
+border-radius: 2em;
+}
+
+.input-container input {
+    width: 20em;
+    height: 2em;
+    border-radius: 1.2em;
+    padding: 0.5em, 1em;
+    border: none;
+    margin-bottom: 1em;
 }
