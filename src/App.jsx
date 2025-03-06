@@ -7,7 +7,10 @@ function App() {
 
   return (
     <div className="container">
-  
+      {/* tried adding the background image inline style guess it didnt work🤣 */}
+  {/* <div>
+    <img src="./src/assets/Background.svg" alt="" />
+  </div> */}
       <div className="logo">
         <img src="./src/assets/LogoSvg.svg" alt="Curamap Logo" />
       </div>
