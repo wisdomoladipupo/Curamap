@@ -1,18 +1,34 @@
-import React from 'react'
-import '../App.css';
+import React from "react";
+import "../App.css";
 const WelcomeInput = () => {
-  return (
-    <div className='input-container'>
-        <form>
-            <label htmlFor="email">
-                <input type="email" />
-            </label>
-            <div>
-            <button className="waitlist-btn"  href=".">Join Waitlist</button>
-            </div>
-        </form>
-    </div>
-  )
-}
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Form Submitted");
+  };
 
-export default WelcomeInput
+  return (
+    <>
+      <form
+        onClick={handleSubmit}
+        className="input-container"
+        id="emailForm"
+        action="#"
+        method="POST"
+      >
+        <label htmlFor="emailInput"></label>
+        <input
+          type="email"
+          id="emailInput"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit" className="waitlist-btn">
+          Join Waitlist
+        </button>
+      </form>
+    </>
+  );
+};
+
+export default WelcomeInput;
