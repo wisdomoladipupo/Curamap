@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   const currentYear = new Date().getFullYear();
@@ -13,13 +13,17 @@ function App() {
         <h2>Hello...</h2>
         <h1>We are coming very soon</h1>
         <p>
-          Stop the pharmacy search and never miss a refill again! Our app brings nearby pharmacies, prescription tracking, and refill reminders to your fingertips. Subscribe now and be the first to know when we go live.
+          Stop the pharmacy search and never miss a refill again! Our app brings
+          nearby pharmacies, prescription tracking, and refill reminders to your
+          fingertips. Subscribe now and be the first to know when we go live.
         </p>
         <button className="waitlist-btn">Join Waitlist</button>
       </div>
-      <p className="footer">&copy; Copyright Curamap {currentYear} | All Rights Reserved</p>
+      <p className="footer">
+        &copy; Copyright Curamap {currentYear} | All Rights Reserved
+      </p>
     </div>
   );
-};
+}
 
 export default App;
