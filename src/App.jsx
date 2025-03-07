@@ -1,16 +1,11 @@
-import React from 'react';
-import './App.css';
-import WelcomeInput from './components/WelcomeInput';
+import React from "react";
+import "./App.css";
+import WelcomeInput from "./components/WelcomeInput";
 function App() {
   const currentYear = new Date().getFullYear();
 
-
   return (
     <div className="container">
-      {/* tried adding the background image inline style guess it didnt work🤣 */}
-  {/* <div>
-    <img src="./src/assets/Background.svg" alt="" />
-  </div> */}
       <div className="logo">
         <img src="./src/assets/LogoSvg.svg" alt="Curamap Logo" />
       </div>
@@ -18,13 +13,17 @@ function App() {
         <h2>Hello...</h2>
         <h1>We are coming very soon</h1>
         <p>
-          Stop the pharmacy search and never miss a refill again! Our app brings nearby pharmacies, prescription tracking, and refill reminders to your fingertips. Subscribe now and be the first to know when we go live.
+          Stop the pharmacy search and never miss a refill again! Our app brings
+          nearby pharmacies, prescription tracking, and refill reminders to your
+          fingertips. Subscribe now and be the first to know when we go live.
         </p>
-     <WelcomeInput/>
       </div>
-      <p className="footer">&copy; Copyright Curamap {currentYear} | All Rights Reserved</p>
+      <WelcomeInput />
+      <p className="footer">
+        &copy; Copyright Curamap {currentYear} | All Rights Reserved
+      </p>
     </div>
   );
-};
+}
 
 export default App;
