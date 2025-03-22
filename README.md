@@ -1,4 +1,5 @@
 
+
 # **CuraMap** 🏥💊  
 A web application that aggregates multiple registered online pharmacies, allowing users to check medication availability and order conveniently.  
 
